@@ -1,0 +1,8 @@
+(
+  for $r in collection('reviews'),
+  $b in collection('businesses')
+  where $r/business_id = $b/business_id
+  and matches($b/categories, 'Restaurant') 
+  and matches($b/attributes/WiFi, "free")
+  return $r
+)[position() = 1 to 1000]

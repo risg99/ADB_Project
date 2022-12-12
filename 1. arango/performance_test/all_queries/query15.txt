@@ -1,0 +1,1 @@
+FOR r in reviews FILTER LIKE(LOWER(r.text),'%love%',true) FOR u in users  LET years = TO_BOOL(TO_STRING(DATE_YEAR(r.date)) IN SPLIT(u.elite,',')) FILTER years == true and r.user_id == u.user_id LIMIT 1000 RETURN r

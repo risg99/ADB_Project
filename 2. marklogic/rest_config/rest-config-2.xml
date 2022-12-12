@@ -1,0 +1,4 @@
+<rest-api xmlns="http://marklogic.com/rest-api">
+	<name>yelp_sf_2</name>
+	<port>8022</port>
+</rest-api>

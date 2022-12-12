@@ -1,0 +1,7 @@
+(
+  for $r in collection('reviews'),
+  $u in collection('users')
+  where $r/user_id = $u/user_id
+  and days-from-duration(xs:date(xs:dateTime($r/date)) - xs:date(xs:dateTime($u/yelping_since))) >= 365
+  return $r
+)[position() = 1 to 1000]

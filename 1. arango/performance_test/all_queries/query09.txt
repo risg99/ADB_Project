@@ -1,0 +1,1 @@
+FOR r IN reviews FOR u IN users FILTER r.user_id == u.user_id AND u.fans >= 100 LIMIT 1000 RETURN r

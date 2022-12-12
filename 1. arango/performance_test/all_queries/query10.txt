@@ -1,0 +1,1 @@
+RETURN LENGTH(FOR b IN businesses FILTER b.stars >= 4.5 RETURN b.name)

@@ -1,0 +1,6 @@
+for $r in collection('reviews')
+  return
+  xdmp:node-insert-after(
+    $r/date,
+    object-node {"sentiment_score": $r/useful + $r/funny + $r/cool}/sentiment_score
+  )

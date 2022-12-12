@@ -1,0 +1,46 @@
+ECHO Start Measure %Time% > Q01.txt 
+
+arangoimport --server.database "yelp_sf_1" --server.username "hello" --server.password "hello" --file "C:/sample/insertBulk_1Mil.json" --type json --collection reviews
+
+ECHO Stop Measure %Time% >> Q01.txt
+
+
+
+ECHO Start Measure %Time% > Q01.txt 
+
+arangoimport --server.database "yelp_sf_2" --server.username "hello" --server.password "hello" --file "C:/sample/insertBulk_1Mil.json" --type json --collection reviews
+
+ECHO Stop Measure %Time% >> Q01.txt
+
+
+ECHO Start Measure %Time% > Q01.txt 
+
+arangoimport --server.database "yelp_sf_3" --server.username "hello" --server.password "hello" --file "C:/sample/insertBulk_1Mil.json" --type json --collection reviews
+
+ECHO Stop Measure %Time% >> Q01.txt
+
+
+
+ECHO Start Measure %Time% > Q01.txt 
+
+arangoimport --server.database "yelp_sf_4" --server.username "hello" --server.password "hello" --file "C:/sample/insertBulk_1Mil.json" --type json --collection reviews
+
+ECHO Stop Measure %Time% >> Q01.txt
+
+
+
+ECHO Start Measure %Time% > Q01.txt 
+
+arangoimport --server.database "yelp_sf_5" --server.username "hello" --server.password "hello" --file "C:/sample/insertBulk_1Mil.json" --type json --collection reviews
+
+ECHO Stop Measure %Time% >> Q01.txt
+
+
+
+ECHO Start Measure %Time% > Q01.txt 
+
+arangoimport --server.database "yelp_sf_6" --server.username "hello" --server.password "hello" --file "C:/sample/insertBulk_1Mil.json" --type json --collection reviews
+
+ECHO Stop Measure %Time% >> Q01.txt
+
+

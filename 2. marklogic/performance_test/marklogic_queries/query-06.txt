@@ -1,0 +1,3 @@
+(
+  collection('businesses')[city = "Saint Louis"]/name
+)[position() = 1 to 1000]

@@ -1,0 +1,11 @@
+(
+  for $r in collection('reviews'),
+  $b in collection('businesses'),
+  $u in collection('users')
+  where $r/business_id = $b/business_id
+  and $r/user_id = $u/user_id
+  and matches($b/categories, 'Gym')
+  and matches($b/attributes/BusinessAcceptsCreditCards, "True")
+  and $u/review_count >= 10
+  return $r
+)[position() = 1 to 1000]

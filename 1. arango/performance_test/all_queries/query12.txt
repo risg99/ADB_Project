@@ -1,0 +1,1 @@
+FOR b IN businesses FILTER LIKE(b.hours.Saturday, '%-22:%', true) AND LIKE(b.hours.Sunday, '%-22:%', true) FOR r IN reviews FILTER r.business_id == b.business_id  FOR u in users FILTER r.user_id == u.user_id AND u.fans >= 25 LIMIT 1000 RETURN r

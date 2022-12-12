@@ -1,0 +1,1 @@
+FOR r in reviews FILTER DATE_YEAR(r.date) == 2017 AND DATE_MONTH(r.date) == 12 LIMIT 1000 RETURN r

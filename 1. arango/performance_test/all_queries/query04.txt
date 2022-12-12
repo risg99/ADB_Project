@@ -1,0 +1,1 @@
+FOR u IN reviews UPDATE { _key: u._key,  'sentiment_score': TO_STRING(TO_NUMBER(u.useful) + TO_NUMBER(u.funny) + TO_NUMBER(u.cool)) } IN reviews

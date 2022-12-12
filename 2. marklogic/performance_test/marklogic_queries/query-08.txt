@@ -1,0 +1,3 @@
+( collection('reviews')[format-dateTime(xs:dateTime(date), "[Y0001]") = '2017' and format-dateTime(xs:dateTime(date), "[M01]") = '12']
+)[position() = 1 to 1000]
+

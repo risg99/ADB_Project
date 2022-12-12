@@ -1,0 +1,7 @@
+for $uri in cts:uris("/sample/", ("document", "limit=1000000", "eager", "concurrent"))
+	return 
+	xdmp:eval(
+	  "declare variable $URI as xs:string external;
+	  xdmp:document-delete($URI)",  
+	  (xs:QName("URI"), $uri)
+	)

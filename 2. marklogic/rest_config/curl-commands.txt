@@ -1,0 +1,11 @@
+curl --anyauth --user ahmad:hope -X POST -d@"C:\Users\ahmad\Desktop\adb_project\rest_config\rest-config-1.xml" -i -H "Content-type: application/xml" http://localhost:8002/v1/rest-apis
+
+curl --anyauth --user ahmad:hope -X POST -d@"C:\Users\ahmad\Desktop\adb_project\rest_config\rest-config-2.xml" -i -H "Content-type: application/xml" http://localhost:8002/v1/rest-apis
+
+curl --anyauth --user ahmad:hope -X POST -d@"C:\Users\ahmad\Desktop\adb_project\rest_config\rest-config-3.xml" -i -H "Content-type: application/xml" http://localhost:8002/v1/rest-apis
+
+curl --anyauth --user ahmad:hope -X POST -d@"C:\Users\ahmad\Desktop\adb_project\rest_config\rest-config-4.xml" -i -H "Content-type: application/xml" http://localhost:8002/v1/rest-apis
+
+curl --anyauth --user ahmad:hope -X POST -d@"C:\Users\ahmad\Desktop\adb_project\rest_config\rest-config-5.xml" -i -H "Content-type: application/xml" http://localhost:8002/v1/rest-apis
+
+curl --anyauth --user ahmad:hope -X POST -d@"C:\Users\ahmad\Desktop\adb_project\rest_config\rest-config-6.xml" -i -H "Content-type: application/xml" http://localhost:8002/v1/rest-apis

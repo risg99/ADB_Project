@@ -1,0 +1,11 @@
+(
+  for $r in collection("reviews")[
+    format-dateTime(xs:dateTime(date), "[Y0001]") = '2018'
+    and stars <= 2
+  ],
+  $b in collection("businesses")[
+    review_count >= 10
+  ]
+  where $r/business_id = $b/business_id
+  return $r
+)[position() = 1 to 1000]

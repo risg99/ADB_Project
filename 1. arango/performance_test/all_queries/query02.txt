@@ -1,0 +1,72 @@
+ECHO Start Measure %Time% > performance_test/sf_1/Q02.txt 
+arangosh
+
+db._useDatabase("yelp_sf_1");
+db._query(" FOR doc in reviewIdView SEARCH STARTS_WITH (doc.review_id, 'sample_review_id') REMOVE doc in reviews");
+exit
+
+ECHO Stop Measure %Time% >> performance_test/sf_1/Q02.txt 
+
+
+ECHO Start Measure %Time% > performance_test/sf_2/Q02.txt 
+arangosh
+
+db._useDatabase("yelp_sf_2");
+db._query(" FOR doc in reviewIdView SEARCH STARTS_WITH (doc.review_id, 'sample_review_id') REMOVE doc in reviews");
+exit
+
+ECHO Stop Measure %Time% >> performance_test/sf_2/Q02.txt 
+
+
+ECHO Start Measure %Time% > performance_test/sf_3/Q02.txt 
+arangosh
+
+db._useDatabase("yelp_sf_3");
+db._query(" FOR doc in reviewIdView SEARCH STARTS_WITH (doc.review_id, 'sample_review_id') REMOVE doc in reviews");
+exit
+
+ECHO Stop Measure %Time% >> performance_test/sf_3/Q02.txt 
+
+
+
+ECHO Start Measure %Time% > performance_test/sf_4/Q02.txt 
+arangosh
+
+db._useDatabase("yelp_sf_4");
+db._query(" FOR doc in reviewIdView SEARCH STARTS_WITH (doc.review_id, 'sample_review_id') REMOVE doc in reviews");
+exit
+
+ECHO Stop Measure %Time% >> performance_test/sf_4/Q02.txt 
+
+
+ECHO Start Measure %Time% > performance_test/sf_5/Q02.txt 
+arangosh
+
+db._useDatabase("yelp_sf_5");
+db._query(" FOR doc in reviewIdView SEARCH STARTS_WITH (doc.review_id, 'sample_review_id') REMOVE doc in reviews");
+exit
+
+ECHO Stop Measure %Time% >> performance_test/sf_5/Q02.txt 
+
+
+ECHO Start Measure %Time% > performance_test/sf_6/Q02.txt 
+arangosh
+
+db._useDatabase("yelp_sf_6");
+db._query(" FOR doc in reviewIdView SEARCH STARTS_WITH (doc.review_id, 'sample_review_id') REMOVE doc in reviews");
+exit
+
+ECHO Stop Measure %Time% >> performance_test/sf_6/Q02.txt 
+
+
+
+
+
+db.reviews.ensureIndex({name: "inv-reviewId", type: "inverted", fields: ["review_id"]});
+db._createView("reviewIdView","search-alias",{indexes: [{collection: "reviews", index: "inv-reviewId"}]});
+
+
+
+
+
+

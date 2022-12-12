@@ -1,0 +1,4 @@
+
+
+mlcp.bat import -host localhost -port 8026 -username ahmad -password hope -input_file_path ^
+"C:\sample\insertBulk_1Mil.json" -mode local -input_file_type delimited_json -output_collections "reviews" -output_uri_replace "/space,'',/C:/sample/,'/sample/'"

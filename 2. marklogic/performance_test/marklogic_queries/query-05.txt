@@ -1,0 +1,2 @@
+for $r in collection('reviews')
+  return xdmp:node-delete($r/sentiment_score)

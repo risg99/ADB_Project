@@ -1,0 +1,6 @@
+(
+  for $r in collection('reviews')[format-dateTime(xs:dateTime(date), "[Y0001]") = '2018'],
+  $u in collection('users')[xs:integer(format-dateTime(xs:dateTime(yelping_since), "[Y0001]")) < 2018]
+  where $r/user_id = $u/user_id
+  return $u
+)[position() = 1 to 1000]

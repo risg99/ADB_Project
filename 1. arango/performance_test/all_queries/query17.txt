@@ -1,0 +1,1 @@
+FOR r in reviews FILTER DATE_YEAR(r.date) == 2018 FOR u in users FILTER u.user_id == r.user_id AND DATE_YEAR(u.yelping_since) < 2018 LIMIT 1000 RETURN u

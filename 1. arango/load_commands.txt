@@ -1,0 +1,55 @@
+Steps: 
+1) arangodb - start server (in admin) localhost:8529
+2) arangod - start cluster (in admin)
+3) create database using interface: yelp_sf_1
+4) create collection inside database: users, reviews, businesses
+5) create username and password: hello and hello
+6) load data into collections using:
+
+# SF 1
+
+arangoimport --server.database "yelp_sf_1" --server.username "hello" --server.password "hello" --file "reviews_1.json" --type json --collection reviews
+
+arangoimport --server.database "yelp_sf_1" --server.username "hello" --server.password "hello" --file "users_1.json" --type json --collection users
+
+arangoimport --server.database "yelp_sf_1" --server.username "hello" --server.password "hello" --file "businesses_1.json" --type json --collection businesses
+
+# SF 2
+
+arangoimport --server.database "yelp_sf_2" --server.username "hello" --server.password "hello" --file "reviews_2.json" --type json --collection reviews
+
+arangoimport --server.database "yelp_sf_2" --server.username "hello" --server.password "hello" --file "users_2.json" --type json --collection users
+
+arangoimport --server.database "yelp_sf_2" --server.username "hello" --server.password "hello" --file "businesses_2.json" --type json --collection businesses
+
+# SF 3
+
+arangoimport --server.database "yelp_sf_3" --server.username "hello" --server.password "hello" --file "reviews_3.json" --type json --collection reviews
+
+arangoimport --server.database "yelp_sf_3" --server.username "hello" --server.password "hello" --file "users_3.json" --type json --collection users
+
+arangoimport --server.database "yelp_sf_3" --server.username "hello" --server.password "hello" --file "businesses_3.json" --type json --collection businesses
+
+# SF 4
+
+arangoimport --server.database "yelp_sf_4" --server.username "hello" --server.password "hello" --file "reviews_4.json" --type json --collection reviews
+
+arangoimport --server.database "yelp_sf_4" --server.username "hello" --server.password "hello" --file "users_4.json" --type json --collection users
+
+arangoimport --server.database "yelp_sf_4" --server.username "hello" --server.password "hello" --file "businesses_4.json" --type json --collection businesses
+
+# SF 5
+
+arangoimport --server.database "yelp_sf_5" --server.username "hello" --server.password "hello" --file "reviews_5.json" --type json --collection reviews
+
+arangoimport --server.database "yelp_sf_5" --server.username "hello" --server.password "hello" --file "users_5.json" --type json --collection users
+
+arangoimport --server.database "yelp_sf_5" --server.username "hello" --server.password "hello" --file "businesses_5.json" --type json --collection businesses
+
+# SF 6
+
+arangoimport --server.database "yelp_sf_6" --server.username "hello" --server.password "hello" --file "reviews_6.json" --type json --collection reviews
+
+arangoimport --server.database "yelp_sf_6" --server.username "hello" --server.password "hello" --file "users_6.json" --type json --collection users
+
+arangoimport --server.database "yelp_sf_6" --server.username "hello" --server.password "hello" --file "businesses_6.json" --type json --collection businesses

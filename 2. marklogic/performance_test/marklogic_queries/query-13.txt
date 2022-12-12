@@ -1,0 +1,7 @@
+(
+  collection("businesses")[
+    matches(string(categories), 'Restaurant') 
+    and (state = 'FL') 
+    and stars >= 4
+  ]
+)[position() = 1 to 1000]

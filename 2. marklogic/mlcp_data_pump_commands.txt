@@ -1,0 +1,71 @@
+# SF 1
+
+mlcp.bat import -host localhost -port 8021 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\businesses_1.json" -mode local -input_file_type delimited_json -output_collections "businesses"
+
+mlcp.bat import -host localhost -port 8021 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\reviews_1.json" -mode local -input_file_type delimited_json -output_collections "reviews"
+
+mlcp.bat import -host localhost -port 8021 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\users_1.json" -mode local -input_file_type delimited_json -output_collections "users"
+
+
+# SF 2
+
+mlcp.bat import -host localhost -port 8022 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\businesses_2.json" -mode local -input_file_type delimited_json -output_collections "businesses"
+
+mlcp.bat import -host localhost -port 8022 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\reviews_2.json" -mode local -input_file_type delimited_json -output_collections "reviews"
+
+mlcp.bat import -host localhost -port 8022 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\users_2.json" -mode local -input_file_type delimited_json -output_collections "users"
+
+
+# SF 3
+
+mlcp.bat import -host localhost -port 8023 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\businesses_3.json" -mode local -input_file_type delimited_json -output_collections "businesses"
+
+mlcp.bat import -host localhost -port 8023 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\reviews_3.json" -mode local -input_file_type delimited_json -output_collections "reviews"
+
+mlcp.bat import -host localhost -port 8023 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\users_3.json" -mode local -input_file_type delimited_json -output_collections "users"
+
+
+# SF 4
+
+mlcp.bat import -host localhost -port 8024 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\businesses_4.json" -mode local -input_file_type delimited_json -output_collections "businesses"
+
+mlcp.bat import -host localhost -port 8024 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\reviews_4.json" -mode local -input_file_type delimited_json -output_collections "reviews"
+
+mlcp.bat import -host localhost -port 8024 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\users_4.json" -mode local -input_file_type delimited_json -output_collections "users"
+
+
+# SF 5
+
+mlcp.bat import -host localhost -port 8025 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\businesses_5.json" -mode local -input_file_type delimited_json -output_collections "businesses"
+
+mlcp.bat import -host localhost -port 8025 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\reviews_5.json" -mode local -input_file_type delimited_json -output_collections "reviews"
+
+mlcp.bat import -host localhost -port 8025 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\users_5.json" -mode local -input_file_type delimited_json -output_collections "users"
+
+
+# SF 6
+
+mlcp.bat import -host localhost -port 8026 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\businesses_6.json" -mode local -input_file_type delimited_json -output_collections "businesses"
+
+mlcp.bat import -host localhost -port 8026 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\reviews_6.json" -mode local -input_file_type delimited_json -output_collections "reviews"
+
+mlcp.bat import -host localhost -port 8026 -username ahmad -password hope -input_file_path ^
+"C:\sf_data\users_6.json" -mode local -input_file_type delimited_json -output_collections "users"
+

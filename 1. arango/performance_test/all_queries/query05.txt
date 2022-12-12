@@ -1,0 +1,1 @@
+FOR doc in reviews UPDATE doc WITH {sentiment_score: null} IN reviews OPTIONS { keepNull: false }

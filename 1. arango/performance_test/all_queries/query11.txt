@@ -1,0 +1,1 @@
+FOR r IN reviews FOR u IN users LET datediff = DATE_DIFF(u.yelping_since, r.date,'day') FILTER r.user_id == u.user_id AND datediff >= 365 LIMIT 1000 RETURN r

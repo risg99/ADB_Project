@@ -1,0 +1,1 @@
+count(collection('businesses')[stars >= 4.5])

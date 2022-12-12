@@ -1,0 +1,1 @@
+FOR b in businesses FOR r in reviews FILTER b.business_id == r.business_id AND LIKE (b.attributes.WiFi,'%free%',true) AND LIKE (b.categories, '%Restaurants%',true) LIMIT 1000 RETURN r

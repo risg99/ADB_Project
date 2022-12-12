@@ -1,0 +1,1 @@
+FOR b in businesses FILTER b.state == 'FL' AND LIKE (b.categories,'%Restaurants%',true) AND b.stars >= 4 LIMIT 1000 RETURN b
